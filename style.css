@@ -1,0 +1,130 @@
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Jacquard 12', sans-serif;
+    z-index: 1000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Testo del banner */
+.cookie-banner p {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Bottone per accettare i cookie */
+.cookie-button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    text-transform: lowercase;
+    font-family: 'Jacquard 12', sans-serif;
+}
+
+/* Hover sul bottone */
+.cookie-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Link per "più informazioni" */
+#cookie-info {
+    color: #bbb;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#cookie-info:hover {
+    color: #fff;
+}
+
+/* Stili per il titolo e il contenuto */
+.content {
+    text-align: center;
+}
+}
+
+.jacquard-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    font-family: 'Jacquard 12', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.jacquard-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Responsività del banner dei cookie */
+@media (max-width: 600px) {
+    .cookie-banner p {
+        font-size: 12px;
+    }
+
+    .cookie-button {
+        font-size: 12px;
+    }
+}.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Jacquard 12', sans-serif;
+    z-index: 1000;
+}
+
+.cookie-banner p {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.cookie-button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    text-transform: lowercase;
+    margin-left: 10px;
+}
+
+.cookie-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#cookie-info {
+    color: #bbb;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#cookie-info:hover {
+    color: #fff;
+}

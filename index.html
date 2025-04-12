@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voicemail archive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favico.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            width: 90%;
+            max-width: 800px;
+        }
+        .title-image {
+            width: 80%;
+            max-width: 600px;
+            height: auto;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .jacquard-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #dadbd9;
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: 'Jacquard 12', sans-serif;
+            transition: background-color 0.3s ease;
+            text-transform: lowercase;
+        }
+        .jacquard-button:hover {
+            background-color: #9f7ebb;
+            color: white;
+        }
+        @media (min-width: 600px) {
+            .buttons {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="title.png" alt="title" class="title-image">
+        <div class="buttons">
+            <a href="https://rinfiggi.online/stream" class="jacquard-button">stream / buy the lost transmissions</a>
+            <a href="send/index.html" class="jacquard-button">leave a message</a>
+        </div>
+    </div>
+</body>
+</html>
+  <!-- cookie banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>questo sito utilizza cookie tecnici per il corretto funzionamento. proseguendo la navigazione, accetti l'uso di questi cookie. <a href="#" id="cookie-info">più informazioni</a></p>
+        <button id="accept-cookies" class="cookie-button">accetto</button>
+    </div>
+
+    <script>
+        // Nascondi il banner quando l'utente accetta
+        document.getElementById('accept-cookies').addEventListener('click', function() {
+            document.getElementById('cookie-banner').style.display = 'none';
+        });
+
+        // Mostra le informazioni sui cookie
+        document.getElementById('cookie-info').addEventListener('click', function() {
+            alert('questo sito utilizza cookie tecnici necessari per il suo corretto funzionamento. i cookie tecnici sono quelli che permettono la navigazione e l\'uso delle funzionalità del sito. continuando a navigare, accetti l\'uso di questi cookie. non vengono raccolti dati per scopi di analisi o pubblicità.');
+        });
+    </script>
+</body>
+</html>
