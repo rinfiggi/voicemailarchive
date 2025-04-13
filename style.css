@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Jacquard 12';
+    src: local('Jacquard 12'), url('jacquardfont.ttf') format('truetype');
+}
+
 .cookie-banner {
     position: fixed;
     bottom: 0;
