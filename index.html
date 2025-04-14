@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,56 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favico.png">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background: url('background.png') no-repeat center center fixed;
-            background-size: cover;
-            text-align: center;
-        }
-        .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            width: 90%;
-            max-width: 800px;
-        }
-        .title-image {
-            width: 80%;
-            max-width: 600px;
-            height: auto;
-        }
-        .buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .jacquard-button {
-            display: inline-block;
-            padding: 12px 20px;
-            background-color: #dadbd9;
-            color: black;
-            text-decoration: none;
-            font-size: 16px;
-            font-family: 'Jacquard 12', sans-serif;
-            transition: background-color 0.3s ease;
-            text-transform: lowercase;
-        }
-        .jacquard-button:hover {
-            background-color: #9f7ebb;
-            color: white;
-        }
-        @media (min-width: 600px) {
-            .buttons {
-                flex-direction: row;
-            }
+        @font-face {
+            font-family: 'Jacquard 12';
+            src: local('Jacquard 12'), url('jacquardfont.ttf') format('truetype');
         }
     </style>
 </head>
@@ -68,23 +21,20 @@
             <a href="https://www.voicemailarchive.com/send" class="jacquard-button">leave a message</a>
         </div>
     </div>
-</body>
-</html>
-  <!-- cookie banner -->
+
+    <!-- cookie banner -->
     <div id="cookie-banner" class="cookie-banner">
-        <p>questo sito utilizza cookie tecnici per il corretto funzionamento. proseguendo la navigazione, accetti l'uso di questi cookie. <a href="#" id="cookie-info">più informazioni</a></p>
-        <button id="accept-cookies" class="cookie-button">accetto</button>
+        <p>this website uses technical cookies necessary for its proper functioning. by continuing to browse, you accept the use of these cookies. <a href="#" id="cookie-info">more info</a></p>
+        <button id="accept-cookies" class="cookie-button">i accept</button>
     </div>
 
     <script>
-        // Nascondi il banner quando l'utente accetta
-        document.getElementById('accept-cookies').addEventListener('click', function() {
+        document.getElementById('accept-cookies').addEventListener('click', function () {
             document.getElementById('cookie-banner').style.display = 'none';
         });
 
-        // Mostra le informazioni sui cookie
-        document.getElementById('cookie-info').addEventListener('click', function() {
-            alert('questo sito utilizza cookie tecnici necessari per il suo corretto funzionamento. i cookie tecnici sono quelli che permettono la navigazione e l\'uso delle funzionalità del sito. continuando a navigare, accetti l\'uso di questi cookie. non vengono raccolti dati per scopi di analisi o pubblicità.');
+        document.getElementById('cookie-info').addEventListener('click', function () {
+            alert("this website uses technical cookies necessary for its proper functioning. technical cookies are those that enable browsing and the use of the site's features. by continuing to browse, you accept the use of these cookies. no data is collected for analysis or advertising purposes.");
         });
     </script>
 </body>
